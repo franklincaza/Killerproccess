@@ -1,0 +1,176 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="kIller" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,633" sap2010:WorkflowViewState.IdRef="kIller_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="kIller" sap:VirtualizedContainerService.HintSize="798,2907" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_6" ProcessName="Taskmgr.EXE" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process Matando procesos de ETL" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="DtsDebugHost.EXE" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process Matando procesos de excel" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="EXCEL.EXE" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="explorer.EXE" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="chrome.exe" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="756,132" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="msedge.EXE" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Task Manager" sap:VirtualizedContainerService.HintSize="756,1783" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2b9168eb-64bb-453f-b9c1-fcbe382e5b4d" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,1494" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="appopen" />
+              <Variable x:TypeArguments="x:String" Name="tabla" />
+              <Variable x:TypeArguments="x:String" Name="infoscree" />
+              <Variable x:TypeArguments="x:String" Name="slreporte" />
+              <Variable x:TypeArguments="x:String" Name="report" />
+              <Variable x:TypeArguments="x:String" Name="fichero" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'More details'" sap:VirtualizedContainerService.HintSize="680,465" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2b9168eb-64bb-453f-b9c1-fcbe382e5b4d" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'More details'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2b9168eb-64bb-453f-b9c1-fcbe382e5b4d" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="16, 326, 93, 28" ElementType="Button" FriendlyName="'More details'" FullSelectorArgument="&lt;wnd cls='NativeHWNDHost' title='TaskManagerMain' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Command Bar' role='pane' /&gt;&lt;ctrl name='More details' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NativeHWNDHost' title='TaskManagerMain' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Command Bar' role='pane' /&gt;&lt;ctrl name='More details' role='push button' automationid='' check:text='More details' /&gt;" Guid="bb22dcfe-a002-45b5-99a2-44d80f68090e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAgCAYAAAACAhZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM1SURBVGhD7Zm9bvIwFIZzXbmgXE/WquoEK1QwIAYkJgQFUYaOLExwAYAQrdD58jq2c+w4BkL7kcGPFMWOz7GP/drOX0SBpxNEaABBhAYQRGgAQYQGEERoAF4RDocDfX5+Ur/fp1arRS8vL+KMPK6jPPA4ThF+fn5oNpvR6+srzedz2m63dDweRRnOyOM6ymEH+0B9SiKcTid6f3+n6XRK39/f8qoblMMO9vAL1MMQ4XK5iAFdLBbyym3AHn7wD9yPIQK2lslkInP3AT/4B+5Hi7Df78Uef20LqgJ+8Ec9fgaURBFFyUDmTdZpTFEUU7qWF/4UxPJLba1TinVd99WrRVitVvTx8SFzOefzWabc2OXwRz1+8gDj2BWkFKhRItQRqqYIeOzEUw9nNBrRZrORORPMeNwHuBDwRz1+8gCTJBPCjnKQZCskqdHpujRMBDz/q8dQxXg8pm63WxICAnQ6HXFwEeCPevyoAHFOspxiTalYHVYHxDLH6siPYhfL7SBmpOoxbHndDGYTp6mnLfijDZXPDtn4IClfMweep9Gvwt61C2sRsJ+7nm6Gw6EhBBfA3v/hj3r8FAGiMzooDECcZiHbnbFsrLJiNXE/ZJPySrPqM+8/Vf7WdQNeVpEWq9sx8gzvSlAoIb6+vioFAPethCypBx6xqsGxyq0Z7bQDxiyWh9151l6O3ZbL32oHYGC1nSrjduV6yxOiQIvQ6/Vot9vJXBklRJUAAP6oxw8PVm5BAz44dgfuEaFiC1JcFcHl72tHbaFIczvLJyNfdWxVM7QIeOFaLpcy5wb3iCoBAPyvv+hZAcpZ5d5WkGaBGwNgdzS39c04u77yduTyt9pBvEpIEQ/3d6UL0J4rPi0CPsZhP7/2WFoF/G5/T+ABYjbxGWiVi47aSx84OmrYZodr2rGtxH9jLvz1jVjk2Y02izu5thKMrcu9UrUIAM/5j7wx2+8ZgdswRAjfjp6DIQJQX1Exs2/5igo72IevqPUpiQAwo/Ex7u3tTf9PUD9wcFb/E1AOu7ACHsMpgoL/WWu32+LPGs7hz9rv4hUh8H8IIjSAIEIDCCI0gCBCAwgiNIAgwtMh+gdVawy7dTnQ2QAAAABJRU5ErkJggg==" InformativeScreenshot="ddc0f1e224a611803884d4958cf695d1.png" ScopeSelectorArgument="&lt;wnd app='taskmgr.exe' cls='TaskManagerWindow' title='Task Manager' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="16, 326, 93, 28" ElementType="Button" FriendlyName="'More details'" FullSelectorArgument="&lt;wnd cls='NativeHWNDHost' title='TaskManagerMain' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Command Bar' role='pane' /&gt;&lt;ctrl name='More details' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='NativeHWNDHost' title='TaskManagerMain' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Command Bar' role='pane' /&gt;&lt;ctrl name='More details' role='push button' automationid='' check:text='More details' /&gt;" Guid="f0b01482-0402-4b2b-8506-5f0a750d1195" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAAgCAYAAAACAhZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM1SURBVGhD7Zm9bvIwFIZzXbmgXE/WquoEK1QwIAYkJgQFUYaOLExwAYAQrdD58jq2c+w4BkL7kcGPFMWOz7GP/drOX0SBpxNEaABBhAYQRGgAQYQGEERoAF4RDocDfX5+Ur/fp1arRS8vL+KMPK6jPPA4ThF+fn5oNpvR6+srzedz2m63dDweRRnOyOM6ymEH+0B9SiKcTid6f3+n6XRK39/f8qoblMMO9vAL1MMQ4XK5iAFdLBbyym3AHn7wD9yPIQK2lslkInP3AT/4B+5Hi7Df78Uef20LqgJ+8Ec9fgaURBFFyUDmTdZpTFEUU7qWF/4UxPJLba1TinVd99WrRVitVvTx8SFzOefzWabc2OXwRz1+8gDj2BWkFKhRItQRqqYIeOzEUw9nNBrRZrORORPMeNwHuBDwRz1+8gCTJBPCjnKQZCskqdHpujRMBDz/q8dQxXg8pm63WxICAnQ6HXFwEeCPevyoAHFOspxiTalYHVYHxDLH6siPYhfL7SBmpOoxbHndDGYTp6mnLfijDZXPDtn4IClfMweep9Gvwt61C2sRsJ+7nm6Gw6EhBBfA3v/hj3r8FAGiMzooDECcZiHbnbFsrLJiNXE/ZJPySrPqM+8/Vf7WdQNeVpEWq9sx8gzvSlAoIb6+vioFAPethCypBx6xqsGxyq0Z7bQDxiyWh9151l6O3ZbL32oHYGC1nSrjduV6yxOiQIvQ6/Vot9vJXBklRJUAAP6oxw8PVm5BAz44dgfuEaFiC1JcFcHl72tHbaFIczvLJyNfdWxVM7QIeOFaLpcy5wb3iCoBAPyvv+hZAcpZ5d5WkGaBGwNgdzS39c04u77yduTyt9pBvEpIEQ/3d6UL0J4rPi0CPsZhP7/2WFoF/G5/T+ABYjbxGWiVi47aSx84OmrYZodr2rGtxH9jLvz1jVjk2Y02izu5thKMrcu9UrUIAM/5j7wx2+8ZgdswRAjfjp6DIQJQX1Exs2/5igo72IevqPUpiQAwo/Ex7u3tTf9PUD9wcFb/E1AOu7ACHsMpgoL/WWu32+LPGs7hz9rv4hUh8H8IIjSAIEIDCCI0gCBCAwgiNIAgwtMh+gdVawy7dTnQ2QAAAABJRU5ErkJggg==" InformativeScreenshot="5149eefe672155988f3d9fa135e1c25d.png" ScopeSelectorArgument="&lt;wnd app='taskmgr.exe' cls='TaskManagerWindow' title='Task Manager' /&gt;" SearchSteps="Selector, FuzzySelector" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="680,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NGetText DisplayName="Get Text 'Apps (6)' APP abiertas" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2b9168eb-64bb-453f-b9c1-fcbe382e5b4d" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="9, 133, 1119, 206" FriendlyName="'Apps (6)'" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tables' role='pane' /&gt;&lt;ctrl name='View' role='pane' /&gt;&lt;ctrl name='List of items' role='list' /&gt;&lt;ctrl name='Apps' role='grouping' /&gt;" FuzzySelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tables' role='pane' /&gt;&lt;ctrl name='View' role='pane' /&gt;&lt;ctrl name='List of items' role='list' /&gt;&lt;ctrl role='grouping' automationid='' /&gt;" Guid="4b593ac0-fc14-4595-b898-636ff9edbd3f" ImageBase64="" InformativeScreenshot="244e793c89df10118ba4b1eff44feb37.png" ScopeSelectorArgument="&lt;wnd app='taskmgr.exe' cls='TaskManagerWindow' title='Task Manager' /&gt;" SearchSteps="Selector, FuzzySelector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[appopen]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'list List of items'" sap:VirtualizedContainerService.HintSize="680,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="2b9168eb-64bb-453f-b9c1-fcbe382e5b4d" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="9, 133, 1365, 554" ElementType="List" FriendlyName="'list List of items'" FullSelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tables' role='pane' /&gt;&lt;ctrl name='View' role='pane' /&gt;&lt;ctrl name='List of items' role='list' /&gt;" FuzzySelectorArgument="&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tables' role='pane' /&gt;&lt;ctrl name='View' role='pane' /&gt;&lt;ctrl name='List of items' role='list' automationid='' /&gt;" Guid="d4adb978-ff81-4d8e-88e7-fb99dbfa4813" InformativeScreenshot="9c8535a8f36948acb304a83ba33545bc.png" ScopeSelectorArgument="&lt;wnd app='taskmgr.exe' cls='TaskManagerWindow' title='Task Manager' /&gt;" SearchSteps="Selector, FuzzySelector" />
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[infoscree]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:WriteTextFile DisplayName="Write Text File" FileName="Reporte maquina" sap:VirtualizedContainerService.HintSize="680,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[infoscree]" />
+            <ui:ReadTextFile Content="[fichero]" DisplayName="Read Text File" FileName="Reporte maquina" sap:VirtualizedContainerService.HintSize="680,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+            <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;estado de la maquina &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;+String.Format(appopen)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="680,151" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Mantenimiento del Maquina BI" To="franklin.ramirez@turia-group.com">
+              <ui:SendOutlookMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String">C:\Users\ROBOT2\Documents\RPA\killerprocesos\Reporte maquina</Literal>
+                  </InArgument>
+                </scg:List>
+              </ui:SendOutlookMail.Files>
+            </ui:SendOutlookMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 680, 600" FilePath="C:\Windows\System32\taskmgr.exe" IconBase64="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" InformativeScreenshot="c3980d5e5a06f379a6d6b4c05ab36e0e.png" Selector="&lt;wnd app='taskmgr.exe' cls='TaskManagerWindow' title='Task Manager'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
